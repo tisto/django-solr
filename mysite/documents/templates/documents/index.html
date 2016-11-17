@@ -1,0 +1,12 @@
+{% if document_list %}
+    <ul>
+    {% for document in document_list %}
+        <li>
+            <h3>{{ document.title }}</h3>
+            <p>{{ document.text }}</p>
+        </li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No documents are available.</p>
+{% endif %}
